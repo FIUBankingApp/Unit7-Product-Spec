@@ -114,11 +114,11 @@
             </objects>
             <point key="canvasLocation" x="-917" y="1095"/>
         </scene>
-        <!--Account-->
+        <!--Transfer-->
         <scene sceneID="aDt-XF-fjO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QSz-K2-Vql" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" id="ZC4-Ta-GDf"/>
+                    <tabBarItem key="tabBarItem" title="Transfer" image="dollarsign" catalog="system" id="ZC4-Ta-GDf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hz5-Fw-Vzn">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -133,11 +133,11 @@
             </objects>
             <point key="canvasLocation" x="718" y="1094"/>
         </scene>
-        <!--Transfer-->
+        <!--Account-->
         <scene sceneID="lQv-IA-Lbb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zVP-iS-ZgC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Transfer" image="dollarsign" catalog="system" id="Q1Z-Tn-SdT"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" id="Q1Z-Tn-SdT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="awf-mU-7O2">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -164,8 +164,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="n19-wR-a0r" kind="relationship" relationship="viewControllers" id="yqp-Yw-2Ga"/>
-                        <segue destination="QSz-K2-Vql" kind="relationship" relationship="viewControllers" id="nJK-U9-JLB"/>
                         <segue destination="zVP-iS-ZgC" kind="relationship" relationship="viewControllers" id="vCM-aq-E5H"/>
+                        <segue destination="QSz-K2-Vql" kind="relationship" relationship="viewControllers" id="nJK-U9-JLB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNp-bN-06P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
