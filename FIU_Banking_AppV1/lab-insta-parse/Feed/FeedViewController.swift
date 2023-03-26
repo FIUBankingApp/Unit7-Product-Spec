@@ -17,16 +17,16 @@ class FeedViewController: UIViewController {
     private var posts = [Post]() {
         didSet {
             // Reload table view data any time the posts variable gets updated.
-            tableView.reloadData()
+            //tableView.reloadData()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.allowsSelection = false
+        //tableView.delegate = self
+        //tableView.dataSource = self
+        //tableView.allowsSelection = false
     }
 
     override func viewWillAppear(_ animated: Bool) {
