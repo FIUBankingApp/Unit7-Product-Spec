@@ -419,6 +419,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NyT-DF-WgF"/>
+                    <connections>
+                        <outlet property="usernameLabel" destination="Oqw-MQ-ECE" id="eGo-B6-0Vf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yY8-TQ-8Uq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
