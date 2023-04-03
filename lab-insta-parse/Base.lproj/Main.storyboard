@@ -298,6 +298,10 @@
                     <navigationItem key="navigationItem" title="FIU Banking" id="LaS-Bo-eDE">
                         <barButtonItem key="backBarButtonItem" title=" " id="3DH-ur-kyc"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="loanBal" destination="xQy-Sf-uRA" id="0My-U0-vC8"/>
+                        <outlet property="savingBal" destination="GtV-vT-wkM" id="j5q-xD-ADp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0B-Ms-PlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -327,6 +331,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="transferField:" destination="LIb-qC-Xoh" eventType="editingDidEnd" id="rz5-0w-tLr"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transfer to:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKV-Ln-KpD">
                                         <rect key="frame" x="0.0" y="8" width="192" height="56"/>
@@ -340,6 +347,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="amountField:" destination="LIb-qC-Xoh" eventType="editingDidEnd" id="KiM-bq-3mI"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5X-8M-oue">
                                         <rect key="frame" x="0.0" y="357" width="351.66666666666674" height="48"/>
@@ -353,6 +363,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="transferSendButton:" destination="LIb-qC-Xoh" eventType="touchUpInside" id="ohl-fo-6Wn"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -362,6 +375,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Transfer" id="2qA-xx-XLb"/>
+                    <connections>
+                        <outlet property="amountField" destination="jRZ-cy-QhE" id="JEr-xZ-pb4"/>
+                        <outlet property="transferField" destination="jgo-Pz-Mx5" id="vDx-sT-Sre"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDb-6o-Txe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -509,7 +526,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o1v-UG-zCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-129" y="1279"/>
+            <point key="canvasLocation" x="-129" y="1248"/>
         </scene>
     </scenes>
     <resources>

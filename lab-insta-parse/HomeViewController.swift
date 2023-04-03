@@ -1,29 +1,57 @@
-//
-//  HomeViewController.swift
-//  FiuBanking
-//
-//  Created by Claudio Micieli on 3/30/23.
-//
-
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        savingBal.text = "$ " + BalanceClass.shared.saveBal
+        loanBal.text = "$ " + BalanceClass.shared.loanBal
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        savingBal.text = "$ " + BalanceClass.shared.saveBal
+        loanBal.text = "$ " + BalanceClass.shared.loanBal
     }
-    */
-
+    
+    @IBOutlet weak var loanBal: UILabel!
+    @IBOutlet weak var savingBal: UILabel!
 }
+/*
+ class HomeViewController: UIViewController {
+     
+     override func viewDidLoad() {
+         super.viewDidLoad()
+         
+         savingBal.text = "$ " + String(BalanceClass.sharedVar.saveBal)
+         loanBal.text = "$ " + String(BalanceClass.sharedVar.loanBal)
+         
+     }
+     @IBOutlet weak var loanBal: UILabel!
+     
+     @IBOutlet weak var savingBal: UILabel!
+ }
+*/
+//============================
+/*
+ class HomeViewController: UIViewController {
+     
+     override func viewDidLoad() {
+         super.viewDidLoad()
+         
+         savingBal.text = "$ " + String(BalanceClass.shared.saveBal)
+         loanBal.text = "$ " + String(BalanceClass.shared.loanBal)
+         
+     }
+     
+     override func viewWillAppear(_ animated: Bool) {
+         savingBal.text = "$ " + String(BalanceClass.shared.saveBal)
+         loanBal.text = "$ " + String(BalanceClass.shared.loanBal)
+     }
+     
+     @IBOutlet weak var loanBal: UILabel!
+     
+     @IBOutlet weak var savingBal: UILabel!
+ }
+*/

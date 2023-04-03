@@ -10,6 +10,8 @@
 		CA672DD529D628B700ED449A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672DD429D628B700ED449A /* HomeViewController.swift */; };
 		CA672DD729D629BC00ED449A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672DD629D629BC00ED449A /* AccountViewController.swift */; };
 		CA672DD929D62A0500ED449A /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672DD829D62A0500ED449A /* TransferViewController.swift */; };
+		CAE682EA29D9E957003B6FC4 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE682E929D9E957003B6FC4 /* Balance.swift */; };
+		CAE682EC29D9F24B003B6FC4 /* BalanceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE682EB29D9F24B003B6FC4 /* BalanceClass.swift */; };
 		CB13E5212913B10B008F45BB /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13E5202913B10B008F45BB /* DateFormatter+Extensions.swift */; };
 		CB69974E2910F705007EDA6B /* Filmotype-Jade.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB69974C2910F704007EDA6B /* Filmotype-Jade.otf */; };
 		CB6997512911044D007EDA6B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6997502911044D007EDA6B /* SignUpViewController.swift */; };
@@ -28,6 +30,8 @@
 		CA672DD429D628B700ED449A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CA672DD629D629BC00ED449A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CA672DD829D62A0500ED449A /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		CAE682E929D9E957003B6FC4 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		CAE682EB29D9F24B003B6FC4 /* BalanceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceClass.swift; sourceTree = "<group>"; };
 		CB13E5202913B10B008F45BB /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		CB69974C2910F704007EDA6B /* Filmotype-Jade.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Filmotype-Jade.otf"; sourceTree = "<group>"; };
 		CB6997502911044D007EDA6B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				CB7896EE2935DC4E00635932 /* User.swift */,
+				CAE682E929D9E957003B6FC4 /* Balance.swift */,
+				CAE682EB29D9F24B003B6FC4 /* BalanceClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 				CA672DD729D629BC00ED449A /* AccountViewController.swift in Sources */,
 				CB7896EF2935DC4E00635932 /* User.swift in Sources */,
 				CB6997512911044D007EDA6B /* SignUpViewController.swift in Sources */,
+				CAE682EC29D9F24B003B6FC4 /* BalanceClass.swift in Sources */,
+				CAE682EA29D9E957003B6FC4 /* Balance.swift in Sources */,
 				CB13E5212913B10B008F45BB /* DateFormatter+Extensions.swift in Sources */,
 				CA672DD529D628B700ED449A /* HomeViewController.swift in Sources */,
 				CB73D397290E3B4A00C12538 /* SceneDelegate.swift in Sources */,

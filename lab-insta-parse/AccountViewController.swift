@@ -1,10 +1,3 @@
-//
-//  AccountViewController.swift
-//  FiuBanking
-//
-//  Created by Claudio Micieli on 3/30/23.
-//
-
 import UIKit
 
 class AccountViewController: UIViewController {
