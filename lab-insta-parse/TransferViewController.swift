@@ -5,6 +5,10 @@ class TransferViewController: UIViewController {
     @IBOutlet weak var transferField: UITextField!
     @IBOutlet weak var amountField: UITextField!
     
+    
+    @IBOutlet weak var NameRecipientField: UITextField!
+    @IBOutlet weak var AmountSavingField: UITextField!
+    
     var nameOfRecipient = ""
     var amountToSend = 0
     
@@ -24,9 +28,39 @@ class TransferViewController: UIViewController {
         
         
         //print(x ?? "Not work")
-        BalanceClass.shared.saveBal = "600"
+        BalanceClass.shared.saveBal -= Float(AmountSavingField.text!) ?? Float(0)
+        BalanceClass.shared.loanBal -= Float(AmountSavingField.text!) ?? Float(0)
+        
+        // create the alert
+                let alert = UIAlertController(title: "Transaction verification", message: "Would you like to continue through with this transaction", preferredStyle: UIAlertController.Style.alert)
+
+                // add the actions (buttons)
+                alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: { action in
+                    
+                    // create the alert
+                           let alert = UIAlertController(title: "Transaction complete", message: "", preferredStyle: UIAlertController.Style.alert)
+
+                           // add an action (button)
+                           alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { action in
+                               
+                               // do something like...
+                               self.NameRecipientField.text = ""
+                               self.AmountSavingField.text = ""
+                               let homeView = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                               self.present(homeView, animated: true, completion: nil)
+                               
+                           }))
+
+                           // show the alert
+                           self.present(alert, animated: true, completion: nil)
+                }))
+                alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
         //print(BalanceClass.shared.saveBal)
     }
+    
     
 }
 /*
